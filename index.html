@@ -5,6 +5,15 @@
     <title><!-- Insert your title here --></title>
 </head>
 <body>
-    <script src="http://localhost:35729/livereload.js"></script>
+    <div class="container">
+        <form enctype="multipart/form-data"
+            method="post" class="putImages">
+           <input id="file" name="media[]" type="file" multiple/>
+           <button class="button submit" type="button">Upload</button>
+        </form>
+        <div class="canvas" id="image"></div>
+    </div>
+    <script src="_/js/script.js"></script>
+    <script src="http://192.168.1.154:35729/livereload.js"></script>
 </body>
 </html>
